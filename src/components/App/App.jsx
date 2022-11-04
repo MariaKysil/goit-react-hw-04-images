@@ -38,7 +38,7 @@ export const App = () => {
     return () => {
       controller.abort();
     };
-  }, [searchQuery]);
+  }, [searchQuery]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const fetchMoreImages = () => {
     fetchImage(searchQuery, page)
